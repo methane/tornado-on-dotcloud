@@ -1,0 +1,8 @@
+www:
+    type: python-worker
+    config:
+        python_version: v3.2
+    ports:
+        www: http
+    approot: chat
+    process: ./chatdemo.py --port=$PORT_WWW
